@@ -30,10 +30,12 @@ public class TesterConjunto {
         ConjuntoArreglo<Integer> conjInt2 = new ConjuntoArreglo<Integer>(5);
 
         System.out.println("se espera todos nulos: " + conjInt.interseccion(conjInt2));
+        conjInt.interseccion(conjInt2).print();
 
         conjInt2.put(15);
         conjInt2.put(7);
 
         System.out.println("se espera 15 y 7: " + conjInt.interseccion(conjInt2));
+        conjInt.interseccion(conjInt2).print();
     }
 }
