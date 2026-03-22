@@ -5,5 +5,6 @@ public interface Conjunto<E> {
     public E get(int i);
     public void put(E elem);
     public boolean pertenece(E elem);
-    public Conjunto<E> interseccion(Conjunto<E> c);
+    // está bien?
+    public ConjuntoArreglo<E> interseccion(ConjuntoArreglo<E> c);
 }
