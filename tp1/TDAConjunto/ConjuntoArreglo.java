@@ -36,7 +36,7 @@ public class ConjuntoArreglo<E> implements Conjunto<E> {
     public boolean pertenece(E elem){
         boolean res = false;
         for (int i = 0; i < array.length && !res; i++){
-            if (array[i].equals(elem))
+            if (array[i] != null && array[i].equals(elem))
                 res = true;
         }
         return res;
