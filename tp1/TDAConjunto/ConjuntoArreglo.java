@@ -53,7 +53,7 @@ public class ConjuntoArreglo<E> implements Conjunto<E> {
     public void print(){
         for (int i = 0; i < array.length; i++){
             if (array[i] != null)
-                System.out.println(array[i] + " ");
+                System.out.print(array[i] + " ");
         }
     }
 }
