@@ -1,3 +1,6 @@
+import java.util.Stack;
+import java.util.EmptyStackException;
+
 public class ArregloPersonas {
     private Persona [] arr;
     private int cant;
