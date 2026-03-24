@@ -1,6 +1,5 @@
 package ej1;
 import java.util.Stack;
-import java.util.EmptyStackException;
 
 public class ArregloPersonas {
     private Persona [] arr;
