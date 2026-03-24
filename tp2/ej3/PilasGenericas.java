@@ -6,7 +6,8 @@ public class PilasGenericas<E> {
 
     public Stack<E> intercalar(Stack<E> p1, Stack<E>p2){
         Stack<E> res = new Stack<E>();
-        for (int i = 0; i < p1.size() + p2.size(); i++){
+        int suma = p1.size() + p2.size();
+        for (int i = 0; i < suma; i++){
             if (!p1.empty()){
                 res.push(p1.pop());
             }
