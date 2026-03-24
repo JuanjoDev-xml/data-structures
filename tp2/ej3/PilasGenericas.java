@@ -11,8 +11,8 @@ public class PilasGenericas<E> {
     }
     public Stack<E> intercalar(Stack<E> p1, Stack<E>p2){
         Stack<E> res = new Stack<E>();
-        int suma = mayorSize(p1, p2);
-        for (int i = 0; i < suma; i++){
+        int mayor = mayorSize(p1, p2);
+        for (int i = 0; i < mayor; i++){
             if (!p1.empty()){
                 res.push(p1.pop());
             }
