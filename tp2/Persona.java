@@ -8,4 +8,8 @@ public class Persona {
     public String obtenerNombre(){
         return nombre;
     }
+
+    public String toString(){
+        return nombre;
+    }
 }
