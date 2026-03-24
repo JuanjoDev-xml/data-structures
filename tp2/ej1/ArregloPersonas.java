@@ -1,3 +1,4 @@
+package ej1;
 import java.util.Stack;
 import java.util.EmptyStackException;
 
@@ -18,11 +19,30 @@ public class ArregloPersonas {
                 listo = true;
             }
         }
+        cant++;
     }
-
+    public void cambiarPersona(Persona p, int i){
+        arr[i] = p;        
+    }
     public void imprimir(){
         for (int i = 0; i < cant; i++){
             arr[i].toString();
+        }
+    }
+
+    public Persona obtenerPersona(int i){
+        return arr[i];
+    }
+
+    public void invertir(ArregloPersonas a){
+        Stack<Persona> pilaPers = new Stack<Persona>();
+        for (int i = a.cant - 1; i >= 0; i++){
+            pilaPers.push(a.obtenerPersona(i));
+        }
+        // return pilaPers ???
+        // o esto:
+        for (int i = a.cant - 1; i >= 0; i++){
+            a.cambiarPersona(pilaPers.pop(), i);
         }
     }
 }

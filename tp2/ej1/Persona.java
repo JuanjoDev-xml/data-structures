@@ -1,3 +1,4 @@
+package ej1;
 public class Persona {
     private String nombre;
 
