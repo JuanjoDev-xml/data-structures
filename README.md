@@ -1,3 +1,3 @@
-# data-structures
+# Data Structures
 
 Data Structures in Java.
