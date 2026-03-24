@@ -42,7 +42,7 @@ public class ConjuntoArreglo<E> implements Conjunto<E> {
         return res;
     }
     // está bien?
-    public ConjuntoArreglo<E> interseccion(ConjuntoArreglo<E> c){
+    public Conjunto<E> interseccion(Conjunto<E> c){
         ConjuntoArreglo<E> inter = new ConjuntoArreglo<E>(cant);
         for (int i = 0; i < array.length; i++){
             if (array[i] != null && c.pertenece(array[i]))

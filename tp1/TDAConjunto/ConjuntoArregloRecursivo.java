@@ -33,18 +33,34 @@ public class ConjuntoArregloRecursivo<E> implements Conjunto<E>{
         }
         cant++;
     }
+
+    
     public boolean pertenece(E elem){
-        boolean res = false;
-        
-        return res;
+        return perteneceRec(elem, cant);
     }
+    private boolean perteneceRec(E elem, int tamanio){
+        if (tamanio == 0)
+            return false;
+        else
+            return array[tamanio-1].equals(elem) || perteneceRec(elem, tamanio-1);
+    } 
+
+
     // está bien?
-    public ConjuntoArreglo<E> interseccion(ConjuntoArreglo<E> c){
-        ConjuntoArreglo<E> inter = new ConjuntoArreglo<E>(cant);
+    public Conjunto<E> interseccion(Conjunto<E> c){
+        ConjuntoArregloRecursivo<E> inter = new ConjuntoArregloRecursivo<E>(cant);
         for (int i = 0; i < array.length; i++){
             if (array[i] != null && c.pertenece(array[i]))
                 inter.put(array[i]);
         }
         return inter;
+    }
+
+
+    public void print(){
+        for (int i = 0; i < array.length; i++){
+            if (array[i] != null)
+                System.out.print(array[i] + " ");
+        }
     }
 }
