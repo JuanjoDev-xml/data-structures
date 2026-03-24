@@ -17,6 +17,13 @@ public class ArregloEnteros {
     }
 
     public Queue<Integer> impares(Queue<Integer> c){
-        
+        Queue<Integer> imp = new LinkedList<Integer>();
+        int num = 0;
+        for (int i = 0; i < c.size(); i++){
+            num = c.remove();
+            if (num % 2 != 0)
+                imp.add(num);
+        }
+        return imp;
     }
 }
