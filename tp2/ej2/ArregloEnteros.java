@@ -11,5 +11,12 @@ public class ArregloEnteros {
         cant = 0;
     }
 
+    public void insertar(int n){
+        arr[cant] = n;
+        cant++;
+    }
 
+    public Queue<Integer> impares(Queue<Integer> c){
+        
+    }
 }
