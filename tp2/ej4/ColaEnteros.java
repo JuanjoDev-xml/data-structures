@@ -6,8 +6,7 @@ import java.util.LinkedList;
 
 public class ColaEnteros {
     public int mayorValor(Queue<Integer> q){
-        q = new LinkedList<Integer>();
-        int mayor = -9999;
+        int mayor = Integer.MIN_VALUE;
         int frente;
         int tamanio = q.size();
         for (int i = 0; i < tamanio; i++){
