@@ -11,13 +11,7 @@ public class ArregloPersonas {
     }
 
     public void insertarPersona(Persona p){
-        boolean listo = false;
-        for (int i = 0; i < arr.length && !listo; i++){
-            if (arr[i] == null){
-                arr[i] = p;
-                listo = true;
-            }
-        }
+        arr[cant] = p;
         cant++;
     }
     public void cambiarPersona(Persona p, int i){
