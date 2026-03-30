@@ -32,8 +32,6 @@ public class ArregloPersonas {
         for (int i = a.cant - 1; i >= 0; i++){
             pilaPers.push(a.obtenerPersona(i));
         }
-        // return pilaPers ???
-        // o esto:
         for (int i = a.cant - 1; i >= 0; i++){
             a.cambiarPersona(pilaPers.pop(), i);
         }
