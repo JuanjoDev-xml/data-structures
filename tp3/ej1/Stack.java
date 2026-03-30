@@ -1,4 +1,3 @@
-package ar.edu.uns.cs.ed.tdas.tdapila;
 
 /**
  * Interface Stack
