@@ -28,8 +28,7 @@ public class ColaArreglo<E> implements Queue<E>{
             throw new FullQueueException("Cola llena");
         }
         q[r] = element;
-        r = (r+1) % (tamanio+1);
-        // por qué no simplemente r++ ??????
+        r++;
     }
     public E dequeue() throws EmptyQueueException{
         if (isEmpty()){
@@ -37,7 +36,7 @@ public class ColaArreglo<E> implements Queue<E>{
         }
         E res = q[f];
         q[f] = null;
-        f = (f+1) / (tamanio+1); // ??????????????????????
+        f++;
         return res;
     }
 }
