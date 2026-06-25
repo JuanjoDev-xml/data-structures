@@ -14,4 +14,7 @@ public class ElementIterator<E> implements Iterator <E> {
         if (lista.isEmpty()) cursor = null; // Si la lista está vacía, la posición corriente es nula
         else cursor = lista.first(); // Sino la posición corriente es la primera de la lista
     }
+    // Devuelve true si hay algún elemento más para ver.
+    // Hay siguiente si el cursor no está más allá de la última posición
+    public boolean hasNext() { return cursor != null; }
 }
