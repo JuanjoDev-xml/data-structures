@@ -14,4 +14,14 @@ public class DNodo<E> implements Position<E>{
         anterior = ant;
     }
     public DNodo(E item){this(item, null, null);}
+    // Setters
+    public void setElemento(E item){
+        elemento = item;
+    }
+    public void setSiguiente(DNodo<E> sig){
+        siguiente = sig;
+    }
+    public void setAnterior(DNodo<E> ant){
+        anterior = ant;
+    }
 }
