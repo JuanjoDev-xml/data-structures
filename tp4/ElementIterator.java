@@ -17,4 +17,12 @@ public class ElementIterator<E> implements Iterator <E> {
     // Devuelve true si hay algún elemento más para ver.
     // Hay siguiente si el cursor no está más allá de la última posición
     public boolean hasNext() { return cursor != null; }
+    // Devuelve el siguiente elemento y avanza el cursor. Falla si hasNext es falso.
+    public E next () {
+        if ( cursor == null ) // Si el cursor es null, el cliente no testeó que hasNext fuera true
+            throw new NoSuchElementException ("Iterador de lista: No hay siguiente");
+        E resultado = cursor.element(); // Salvo el elemento corriente
+        cursor = (cursor == lista.last()) ? null : lista.next(cursor); // Avanzo a la siguiente posición
+        return resultado; // Retorno el elemento salvado
+    }
 }
