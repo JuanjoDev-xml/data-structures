@@ -25,4 +25,6 @@ public class ElementIterator<E> implements Iterator <E> {
         cursor = (cursor == lista.last()) ? null : lista.next(cursor); // Avanzo a la siguiente posición
         return resultado; // Retorno el elemento salvado
     }
+    // Remueve el último elemento retornado por el iterador
+    public void remove() { /* No lo haremos. */ }
 }
