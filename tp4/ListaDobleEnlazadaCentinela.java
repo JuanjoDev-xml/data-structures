@@ -9,5 +9,8 @@ import ar.edu.uns.cs.ed.tdas.Position;
 import java.util.Iterator;
 
 public class ListaDobleEnlazadaCentinela<E> implements PositionList<E>{
+   protected DNodo<E> header;
+   protected DNodo<E> trailer;
+   protected int tamanio;
    
 }
