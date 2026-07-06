@@ -21,4 +21,8 @@ public class ListaDobleEnlazadaCentinela<E> implements PositionList<E>{
         trailer.setAnterior(header);
         tamanio = 0;
     }
+   // Métodos
+   public int size(){
+        return tamanio;
+    }
 }
