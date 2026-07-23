@@ -25,4 +25,8 @@ public class ListaDobleEnlazadaCentinela<E> implements PositionList<E>{
    public int size(){
         return tamanio;
     }
+   
+   public boolean isEmpty(){
+        return tamanio == 0;
+    }
 }
