@@ -29,4 +29,10 @@ public class ListaDobleEnlazadaCentinela<E> implements PositionList<E>{
    public boolean isEmpty(){
         return tamanio == 0;
     }
+   
+   public Position<E> first() throws EmptyListException{
+        if (isEmpty()) throw new EmptyListException("Lista vacía");
+        return header.getSiguiente();
+    }
+   
 }
