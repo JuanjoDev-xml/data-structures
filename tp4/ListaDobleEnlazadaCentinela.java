@@ -35,4 +35,8 @@ public class ListaDobleEnlazadaCentinela<E> implements PositionList<E>{
         return header.getSiguiente();
     }
    
+   public Position<E> last(){
+        if (isEmpty()) throw new EmptyListException("Lista vacía");
+        return trailer.getAnterior();
+    }
 }
